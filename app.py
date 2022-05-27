@@ -7,7 +7,7 @@ model = pickle.load(open('verifIDNews_model.pkl','rb'))
 
 @app.route('/')
 def home():
-    return 'Wellcome to verifIDNews'
+    return '<h1>Wellcome to verifIDNews</h1>'
 
 @app.route('/predict',methods=['POST'])
 def predict():
