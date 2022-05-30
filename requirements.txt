@@ -1,2 +1,5 @@
 Flask
 gunicorn
+keras.preprocessing
+tensorflow
+pathlib
