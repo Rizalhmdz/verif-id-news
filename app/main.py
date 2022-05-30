@@ -3,13 +3,7 @@ from keras.preprocessing import text, sequence
 from keras.models import load_model
 from pathlib import Path
 
-from py import process
-
-PORT = process.env.PORT or 8080
-
 app = Flask(__name__)
-
-app.set('port', PORT)
 
 @app.route('/')
 def home():
