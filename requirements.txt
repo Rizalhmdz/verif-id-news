@@ -1,5 +1,5 @@
 Flask
 gunicorn
 keras.preprocessing
-tensorflow
+tensorflow.keras
 pathlib

@@ -1,5 +1,5 @@
 from flask import Flask, request, json
-from keras.preprocessing import text, sequence
+from keras.preprocessing import text, sequence, keras
 from pathlib import Path
 import tensorflow as tf
 
@@ -22,7 +22,7 @@ def predict():
     # model = pickle.load(open('api_model.h5', 'rb'))
     # path = str(os.path.dirname(__file__)) + '\\..\\CNN_model'
     path= str(Path().cwd()) +'\\CNN_model'
-    model= tf.keras.models.load_model(path)
+    model= keras.models.load_model(path)
 
     
     max_features = 10000
