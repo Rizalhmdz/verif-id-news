@@ -1,5 +1,4 @@
 Flask
-python == 3.5
 gunicorn
 keras.preprocessing
 tensorflow.keras
