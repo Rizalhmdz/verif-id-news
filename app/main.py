@@ -44,11 +44,11 @@ def predict():
     elif output <= 0.15 :
         label = 'Berita Terindikasi Kuat sebagai Hoax'
     
-    response = app.response_class(
-        response= json.dumps({'indicator': str(output),'msg' : label }),
-        status=200,
-        mimetype='application/json'
-    )
+    # response = app.response_class(
+    #     response= json.dumps({'indicator': str(output),'msg' : label }),
+    #     status=200,
+    #     contet_type=='application/json'
+    # )
     
-    return response
+    return json.dumps({'indicator': str(output),'msg' : label }),
         
