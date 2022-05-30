@@ -50,5 +50,8 @@ def predict():
     #     contet_type=='application/json'
     # )
     
-    return json.dumps({'indicator': str(output),'msg' : label }),
+    return json.dumps({'indicator': str(output),'msg' : label })
+
+if __name__ == "__main__":
+        app.run(debug=True)
         
